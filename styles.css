@@ -4,6 +4,10 @@ body{
     font-weight: 400;
     line-height: 1.4;
     color: #1c1d1f;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
 }
 header {
     background-color: #d1d7dc;
@@ -233,19 +237,34 @@ ul {
     font-size: 22px;
 }
 
-#explore{
+.explore{
     font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 700;
     line-height: 1.2;
     font-size: 15px;
-    width: 150px;
     padding: 10px 5px 10px 5px;
     margin-left: 0;
     margin-bottom: 20px;
 }
 
-#explore:hover{
+.explore:hover{
      background-color: rgb(240, 236, 229);
+}
+.start{
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    font-size: 15px;
+    padding: 10px 5px 10px 5px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background: black;
+    color: white;
+}
+
+.start:hover{
+     background-color: rgb(240, 236, 229);
+     color: black;
 }
 
 #cards{
@@ -291,16 +310,24 @@ ul {
     font-weight: 400;
     text-decoration: line-through;
 }
-#promo {
+#promotions {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 8.6rem;
+    text-overflow: ellipsis;
+    font-weight: bold;
+}
+#promotions li{
+   max-width: 300px;
+}
+.promo {
     display: grid;
     grid-auto-flow: column;
     grid-gap: 1.6rem;
     overflow: auto;
     font-weight: bold;
 }
-.fa {
-    float: right;
-}
+
 #featured {
     flex-direction: column;
     width: 92%;
@@ -322,4 +349,67 @@ ul {
 .featured-topics li {
     line-height: 2.5;
     list-style: none;
+}
+#instructor {
+    display: grid;
+    grid-auto-flow: column;
+    margin: 120px 0 0 120px;
+}
+.inst {
+    width: 400px;
+    padding-top: 50px;
+}
+#partners h2 {
+    text-align: center;
+}
+#partners p {
+    text-align: center;
+}
+.footer{
+    background: black;
+    max-width: 100%;
+    margin: 1rem auto;
+    overflow: auto;
+    color: rgb(250, 244, 244);
+}
+.footer ,
+.footer a{
+    color: #fffefe;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+    color: #999999;
+    padding: 0;
+}
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+#footer-button {
+    order: 1;
+    flex-shrink: 0;
+    margin-left: auto;
+    height: 25px;
+    background-color: transparent;
+    border: 1px solid #1c1d1f;
+    width: 100px;
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 15px; 
+    cursor: pointer;
+    color:#fff;
+}
+
+.footer-copyright{
+    float: right;
+}
+
+.footer li{
+    line-height: 2.4;
 }

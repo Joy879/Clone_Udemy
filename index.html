@@ -63,7 +63,7 @@
                     to build everything from games to sites to apps. Choose from
                     a range of courses that will appeal to both beginners and
                     advanced developers alike.</p>
-                <button id="explore">Explore Python</button>
+                <button class="explore">Explore Python</button>
                 <section id="cards">
                     <div class="card">
                         <img
@@ -133,11 +133,14 @@
         </section>
         <section class="outersec">
             <section class="innersec">
-                <ul id="promo">
-                <li><i class="fa-duotone fa-circle-play"></i>Learn in-demand skills with over 213,000 video courses</li>
-                <li><i class="fa-duotone fa-circle-star"></i>Choose courses taught by real-world experts</li>
-                <li><i class="fa-regular fa-infinity"></i>Learn at your own pace, with lifetime access on mobile and
-                    desktop</li>
+                <ul class="fa-ul" id="promotions">
+                    <li><i class="fa fa-play-circle" aria-hidden="true"></i>Learn in-demand
+                        skills with over 213,000 video courses</li>
+                    <li><i class="fa fa-star-o" aria-hidden="true"></i>Choose courses
+                        taught by real-world experts</li>
+                    <li><i class="fa-regular fa-infinity"></i>Learn at your own
+                        pace, with lifetime access on mobile and
+                        desktop </li>
                 </ul>
             </section>
         </section>
@@ -281,15 +284,20 @@
                                 </ul>
                             </div>
                         </div>
-                        <button>Explore more topics</button>
+                        <button class="explore">Explore more topics</button>
                     </div>
                 </div>
             </section>
         </section>
         <section class="outersec">
-            <section class="innersec">
+            <section class="innersec" id="instructor">
                 <div>
-                    <img src="https://s.udemycdn.com/home/non-student-cta/instructor-2x-v3.jpg">
+                    <img
+                        width="400"
+                        height="400"
+                        src="https://s.udemycdn.com/home/non-student-cta/instructor-2x-v3.jpg">
+                </div>
+                <div class="inst">
                     <h3>Become an instructor</h3>
                     <p>Instructors
                         from around the world teach millions
@@ -297,48 +305,124 @@
                         tools and skills to teach what you
                         love
                     </p>
-                    <button>Start Teaching Today</button>
+                    <button class="start">Start Teaching Today</button>
                 </div>
             </section>
         </section>
         <section class="outersec">
-            <section class="innersec">
+            <section class="innersec" id="partners">
                 <h2>Trusted by over 13,400 great teams</h2>
-                <p>Leading companies use the same courses to help employees keep their skills fresh.</p>
-                <ul>
+                <p>Leading companies use the same courses to help employees keep
+                    their skills fresh.</p>
+                <ul class="promo">
                     <li>
-                        <img 
-                        alt="Nasdaq logo" 
-                        width="115"
-                        height="44"
-                        src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg">
+                        <img
+                            alt="Nasdaq logo"
+                            width="115"
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg">
                     </li>
                     <li>
                         <img
-                        alt="Volkswagen logo"
-                        width="44"
-                        height="44"
-                                                src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg"></li><li
-                                            class="partner-logos--logo-item--2-lfP"><img
-                                                alt="Box logo" width="67"
-                                                height="44"
-                                                src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg"></li><li
-                                            class="partner-logos--logo-item--2-lfP"><img
-                                                alt="NetApp logo" width="115"
-                                                height="44"
-                                                src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg"></li><li
-                                            class="partner-logos--logo-item--2-lfP"><img
-                                                alt="Eventbrite logo"
-                                                width="115" height="44"
-                                                src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg"></li><li
-                                            class="partner-logos--logo-item--2-lfP"><img
-                                                alt="Tata Consultancy Services
-                                                logo" width="115" height="44"
-                                                src="https://s.udemycdn.com/partner-logos/v4/tcs-dark.svg">
-                                            </li>
-                                            </ul>
+                            alt="Volkswagen logo"
+                            width="44"
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg">
+                    </li>
+                    <li class="partner-logos--logo-item--2-lfP">
+                        <img
+                            alt="Box logo"
+                            width="67"
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg">
+                    </li>
+                    <li class="partner-logos--logo-item--2-lfP">
+                        <img
+                            alt="NetApp logo"
+                            width="115"
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg">
+                    </li>
+                    <li class="partner-logos--logo-item--2-lfP">
+                        <img
+                            alt="Eventbrite logo"
+                            width="115"
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg">
+                    </li>
+                    <li class="partner-logos--logo-item--2-lfP">
+                        <img
+                            alt="Tata Consultancy Services logo" 
+                            width="115" 
+                            height="44"
+                            src="https://s.udemycdn.com/partner-logos/v4/tcs-dark.svg">
+                    </li>
+                </ul>
             </section>
         </section>
-        
+        <section class="outersec">
+            <section class="innersec" id="instructor">
+                <div class="inst">
+                    <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-ub.svg">
+                    <p>Get unlimited access to 19,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.
+                    </p>
+                    <button class="start">Get Udemy Business</button>
+                </div>
+                <div>
+                    <img
+                        width="400"
+                        height="400"
+                        src="https://s.udemycdn.com/home/non-student-cta/ub-1x-v3.jpg">
+                </div>
+            </section>
+        </section>
+        <section class="outersec">
+            <section class="innersec" id="instructor">
+                <div>
+                    <img
+                        width="400"
+                        height="400"
+                        src="https://s.udemycdn.com/home/non-student-cta/transform-1x-v3.jpg">
+                </div>
+                <div class="inst">
+                    <h3>Transform your life through education</h3>
+                    <p>Learners around the world are launching new careers, advancing in their fields, and enriching their lives.</p>
+                    <button class="start">Find out How</button>
+                </div>
+            </section>
+        </section>
+        <footer class="footer">
+              <div class="footer-cols">
+              <ul>
+                <li><a href="#">Udemy Business</a></li>
+                <li><a href="#">Teach on Udemy</a></li>
+                <li><a href="#">Get the app</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help and Support</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Investors</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Cookie Settings</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Accessibility statement</a></li>
+              </ul>
+              <button id="footer-button"><img src="/images/globe3.png" alt="globe" width="10" height="10">English </button>
+            </div>
+            <br>
+            <br>
+            <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg" alt="logo" width="91" height="34"
+                id="udemylogo">
+            <p class="footer-copyright"><i class="fa fa-copyright" aria-hidden="true"></i>2022 Udemy, Inc.</p>
+            </div>
+          </footer>
+
     </body>
 </html>
