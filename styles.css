@@ -392,6 +392,8 @@ ul {
 #footer-button {
     order: 1;
     flex-shrink: 0;
+    justify-content: space-evenly;
+    display: flex;
     margin-left: auto;
     height: 25px;
     background-color: transparent;
