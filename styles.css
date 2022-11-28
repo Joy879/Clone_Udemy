@@ -1,6 +1,6 @@
 body{
     margin: 0%;
-    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-family: udemy sans,sf pro text,-apple-system, 'Tiro Devanagari Sanskrit', serif,'Averia Serif Libre','PT Serif', serif,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     font-weight: 400;
     line-height: 1.4;
     color: #1c1d1f;
@@ -8,6 +8,7 @@ body{
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    font-size: large;
 }
 header {
     background-color: #d1d7dc;
@@ -24,6 +25,14 @@ header {
     
     white-space: nowrap;
     
+}
+h1,h2,h3,h4{
+    font-weight: 800;
+    font-size: xx-large;
+}
+p {
+    font-size: medium;
+    font-family: udemy sans, Helvetica, sans-serif,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 #menuIcn{
     display: none;
@@ -219,6 +228,7 @@ ul {
 #tabs > li{
     display: inline;
     cursor: pointer;
+    font-family:  sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 
 #tabs > li:hover {
@@ -317,8 +327,26 @@ ul {
     text-overflow: ellipsis;
     font-weight: bold;
 }
+#promotions ul{
+    margin: 0;
+}
 #promotions li{
    max-width: 300px;
+   position: relative;
+   margin: 1em 0;
+   font-size: smaller;
+   display: flex;
+   flex-direction: row;
+   font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+#promotions li::before {
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translate(-150%, -50%);
+  }
+#promotions li img{
+    height: 27px;
+    width: 27px;
 }
 .promo {
     display: grid;
@@ -347,8 +375,11 @@ ul {
     /* border: 1px solid black; */
 }
 .featured-topics li {
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
     line-height: 2.5;
     list-style: none;
+    font-size: larger;
+    font-weight: 500;
 }
 #instructor {
     display: grid;
@@ -377,6 +408,7 @@ ul {
     color: #fffefe;
     font-size: 0.9rem;
     text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .footer p{
@@ -389,6 +421,7 @@ ul {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 2rem;
 }
+
 #footer-button {
     order: 1;
     flex-shrink: 0;
@@ -399,13 +432,12 @@ ul {
     background-color: transparent;
     border: 1px solid #1c1d1f;
     width: 120px;
-    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
-    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -.02rem;
     font-size: 15px; 
     cursor: pointer;
     color:#fff;
+    
 }
 
 .footer-copyright{
