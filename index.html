@@ -1,171 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Udemy</title>
-</head>
-<body>
-    <nav class="navbar">
-        <img src="images/icons8-menu.svg" alt="menu icon" id="menuIcn">
-        <img src="images/logo-udemy.svg" alt="logo" width="91" height="34" id="udemylogo">
-        <span>Categories</span>
-        <form action="">
-            <div class="search">
-                <button class="searchSubmit" type="submit">
-                    <img class="search-icon" src="images/search1.svg" alt="search icon">
-                </button>
-                <input class="search-text" type="text" placeholder="Search for anything">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Udemy</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <img src="images/icons8-menu.svg" alt="menu icon" id="menuIcn">
+            <img src="images/logo-udemy.svg" alt="logo" width="91" height="34"
+                id="udemylogo">
+            <span>Categories</span>
+            <form action="">
+                <div class="search">
+                    <button class="searchSubmit" type="submit">
+                        <img class="search-icon" src="images/search1.svg"
+                            alt="search icon">
+                    </button>
+                    <input class="search-text" type="text" placeholder="Search
+                        for anything">
+                </div>
+            </form>
+            <span class="btn1 nowrap">Udemy Business</span>
+            <span class="btn2 nowrap">Teach on Udemy</span>
+            <img id="shop-cart" src="images/shopping.png" alt="shopping Cart">
+            <button id="login">Login</button>
+            <button id="signup">Sign up</button>
+            <button id="lngbutton">
+                <img src="images/globe3.png" alt="Select language"
+                    class="globe-icon">
+            </button>
+        </nav>
+        <header>
+            <div id="new">
+                <h2>Cyber Sale ends tonight</h2>
+                <p>Last chance to bring home the latest skills with courses as
+                    low as $9.99.</p>
             </div>
-        </form>
-        <span class="btn1 nowrap">Udemy Business</span>
-        <span class="btn2 nowrap">Teach on Udemy</span>
-        <img id="shop-cart" src="images/shopping.png" alt="shopping Cart">
-        <button id="login">Login</button>
-        <button id="signup">Sign up</button>
-        <button id="lngbutton">
-            <img src="images/globe3.png" alt="Select language" class="globe-icon">
-        </button>
-    </nav>
-    <header>
-        <div id="new">
-            <h2>Cyber Sale ends tonight</h2>
-            <p>Last chance to bring home the latest skills with courses as low as $9.99.</p>
-        </div>
-    </header>
-    <section id="courses">
-        <h2>A broad selection of courses</h2>
-        <p>Choose from 213,000 online video courses with new additions published every month</p>
-        <ul id="tabs">
-            <li id="selectedtab">Python</li>
-            <li>Excel</li>
-            <li>Web Development</li>
-            <li>JavaScript</li>
-            <li>Data Science</li>
-            <li>AWS Certification</li>
-            <li>Drawing</li>
-        </ul>
-        <section id="selectedCourses">
-            <h3>Expand your Career opportunities with Python</h3>
-            <p>Take one of Udemy`s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to both beginners and advanced developers alike.</p>
-            <button id="explore">Explore Python</button>
-            <section id="cards">
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg" alt="python">
-                    <h4>Learn Python:The Complete Python Programming Course</h4>
-                    <span class="author">Avinash Jain, The Codex</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
+        </header>
+        <section id="courses">
+            <h2>A broad selection of courses</h2>
+            <p>Choose from 213,000 online video courses with new additions
+                published every month</p>
+            <ul id="tabs">
+                <li id="selectedtab">Python</li>
+                <li>Excel</li>
+                <li>Web Development</li>
+                <li>JavaScript</li>
+                <li>Data Science</li>
+                <li>AWS Certification</li>
+                <li>Drawing</li>
+            </ul>
+            <section id="selectedCourses">
+                <h3>Expand your Career opportunities with Python</h3>
+                <p>Take one of Udemy`s range of Python courses and learn how to
+                    code using this incredibly useful language. Its simple
+                    syntax and readability makes Python perfect for Flask,
+                    Django, data science, and machine learning. You’ll learn how
+                    to build everything from games to sites to apps. Choose from
+                    a range of courses that will appeal to both beginners and
+                    advanced developers alike.</p>
+                <button id="explore">Explore Python</button>
+                <section id="cards">
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg"
+                            alt="python">
+                        <h4>Learn Python:The Complete Python Programming Course</h4>
+                        <span class="author">Avinash Jain, The Codex</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
 
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg" alt="python">
-                    <h4>Learn Python for Data Analysis and Visualization</h4>
-                    <span class="author">Jose Portilla</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg"
+                            alt="python">
+                        <h4>Learn Python for Data Analysis and Visualization</h4>
+                        <span class="author">Jose Portilla</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
 
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/240x135/405878_e5a0_3.jpg" alt="python">
-                    <h4>Python for Beginners - Learn Python from scratch</h4>
-                    <span class="author">Edwin Diaz, Coding Faculty Solutions</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/240x135/405878_e5a0_3.jpg"
+                            alt="python">
+                        <h4>Python for Beginners - Learn Python from scratch</h4>
+                        <span class="author">Edwin Diaz, Coding Faculty
+                            Solutions</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
 
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/480x270/482754_7146_6.jpg" alt="python">
-                    <h4>Python From Scratch &amp; Selenium WebDriver QA Automation 2022</h4>
-                    <span class="author">Admas Kinfu</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/482754_7146_6.jpg"
+                            alt="python">
+                        <h4>Python From Scratch &amp; Selenium WebDriver QA
+                            Automation 2022</h4>
+                        <span class="author">Admas Kinfu</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
 
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/480x270/519554_da68_6.jpg" alt="python">
-                    <h4>Teach Your Kids to Code: Learn to Program Python at Any Age!</h4>
-                    <span class="author">Bryson Payne</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/519554_da68_6.jpg"
+                            alt="python">
+                        <h4>Teach Your Kids to Code: Learn to Program Python at
+                            Any Age!</h4>
+                        <span class="author">Bryson Payne</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
 
-                    </section>
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="outersec">
+            <section class="innersec">
+                <ul id="promo">
+                <li><i class="fa-duotone fa-circle-play"></i>Learn in-demand skills with over 213,000 video courses</li>
+                <li><i class="fa-duotone fa-circle-star"></i>Choose courses taught by real-world experts</li>
+                <li><i class="fa-regular fa-infinity"></i>Learn at your own pace, with lifetime access on mobile and
+                    desktop</li>
+                </ul>
+            </section>
+        </section>
+        <section class="outersec" id="courses">
+            <section class="innersec" id="selectedCourses">
+                <h2>Students are viewing</h2>
+                <section id="cards">
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/1565838_e54e_16.jpg"
+                            alt="python">
+                        <h4>The Complete 2023 Web Development Bootcamp</h4>
+                        <span class="author">Dr. Angela Yu</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
+
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/2776760_f176_10.jpg"
+                            alt="python">
+                        <h4>100 Days of Code: The Complete Python Pro Bootcamp
+                            for 2023</h4>
+                        <span class="author">Dr. Angela Yu</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
+
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/851712_fc61_6.jpg"
+                            alt="python">
+                        <h4>The Complete JavaScript Course 2023: From Zero to
+                            Expert!</h4>
+                        <span class="author">Jonas Schmedtmann</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
+
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/2196488_8fc7_10.jpg"
+                            alt="python">
+                        <h4>Ultimate AWS Certified Solutions Architect Associate
+                            SAA-C03</h4>
+                        <span class="author">Stephane Maarek | AWS Certified
+                            Cloud </span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
+
+                        </section>
+                    </div>
+                    <div class="card">
+                        <img
+                            src="https://img-b.udemycdn.com/course/480x270/1362070_b9a1_2.jpg"
+                            alt="python">
+                        <h4>React - The Complete Guide (incl Hooks, React
+                            Router, Redux)</h4>
+                        <span class="author">Academind by Maximilian
+                            Schwarzmüller</span>
+                        <section class="price">
+                            <span class="current"> $9.99</span>
+                            <span class="prev"> $84.99</span>
+
+                        </section>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <section class="outersec">
+            <section class="innersec">
+                <h2>Featured topics by category</h2>
+                <div class="featured-topics">
+                    <div>
+                        <ul>
+                            <li style="font-size: 20px; font-weight: 700;">Development</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Python</a></li>
+                            <li>36,354,994 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Web Development</a></li>
+                            <li>11,415,615 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Machine Learning</a></li>
+                            <li>7,070,015 students</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li style="font-size: 20px; font-weight: 700;">Business</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Financial Analysis</a></li>
+                            <li>1,195,282 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">SQL</a></li>
+                            <li>5,977,561 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">PMP</a></li>
+                            <li>1,733,398 students</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li style="font-size: 20px; font-weight: 700;">IT
+                                and
+                                Software</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="">AWS Certification</a></li>
+                            <li>6,078,244 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Ethical Hacking</a></li>
+                            <li>10,931,066 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Cyber Security</a></li>
+                            <li>3,998,037 students</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li style="font-size: 20px; font-weight: 700;">Design</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Photoshop</a></li>
+                            <li>10,909,736 students</li>
+                            <li style="font-size: 15px; font-weight: 700;"><a
+                                    href="#">Graphic Design</a><li>
+                                    <li>3,381,052</li>
+                                    <li style="font-size: 15px; font-weight:
+                                        700;"><a
+                                            href="#">Drawing</a></li>
+                                    <li>2,410,849 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button>Explore more topics</button>
+                    </div>
                 </div>
             </section>
         </section>
-    </section>
-    <section>
-        <div class="Promo">
-            <h2>Learn in-demand skills with over 213,000 video courses</h2>
-            <h2>Choose courses taught by real-world experts</h2>
-            <h2>Learn at your own pace, with lifetime access on mobile and desktop</h2>
-        </div>
-    </section>
-    <section id="selectedCourses">
-        <h2>Students are viewing</h2>
-            <section id="cards">
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/480x270/1565838_e54e_16.jpg" alt="python">
-                    <h4>The Complete 2023 Web Development Bootcamp</h4>
-                    <span class="author">Dr. Angela Yu</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
-
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg" alt="python">
-                    <h4>Learn Python for Data Analysis and Visualization</h4>
-                    <span class="author">Jose Portilla</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
-
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/240x135/405878_e5a0_3.jpg" alt="python">
-                    <h4>Python for Beginners - Learn Python from scratch</h4>
-                    <span class="author">Edwin Diaz, Coding Faculty Solutions</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
-
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/480x270/482754_7146_6.jpg" alt="python">
-                    <h4>Python From Scratch &amp; Selenium WebDriver QA Automation 2022</h4>
-                    <span class="author">Admas Kinfu</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
-
-                    </section>
-                </div>
-                <div class="card">
-                    <img src="https://img-b.udemycdn.com/course/480x270/519554_da68_6.jpg" alt="python">
-                    <h4>Teach Your Kids to Code: Learn to Program Python at Any Age!</h4>
-                    <span class="author">Bryson Payne</span>
-                    <section class="price">
-                        <span class="current"> $9.99</span>
-                        <span class="prev"> $84.99</span>
-
-                    </section>
+        <section class="outersec">
+            <section class="innersec">
+                <div>
+                    <img src="https://s.udemycdn.com/home/non-student-cta/instructor-2x-v3.jpg">
+                    <h3>Become an instructor</h3>
+                    <p>Instructors
+                        from around the world teach millions
+                        of students on Udemy. We provide the
+                        tools and skills to teach what you
+                        love
+                    </p>
+                    <button>Start Teaching Today</button>
                 </div>
             </section>
-    </section>
-</body>
+        </section>
+        <section class="outersec">
+            <section class="innersec">
+                <h2>Trusted by over 13,400 great teams</h2>
+                <p>Leading companies use the same courses to help employees keep their skills fresh.</p>
+                <ul>
+                    <li>
+                        <img 
+                        alt="Nasdaq logo" 
+                        width="115"
+                        height="44"
+                        src="https://s.udemycdn.com/partner-logos/v4/nasdaq-dark.svg">
+                    </li>
+                    <li>
+                        <img
+                        alt="Volkswagen logo"
+                        width="44"
+                        height="44"
+                                                src="https://s.udemycdn.com/partner-logos/v4/volkswagen-dark.svg"></li><li
+                                            class="partner-logos--logo-item--2-lfP"><img
+                                                alt="Box logo" width="67"
+                                                height="44"
+                                                src="https://s.udemycdn.com/partner-logos/v4/box-dark.svg"></li><li
+                                            class="partner-logos--logo-item--2-lfP"><img
+                                                alt="NetApp logo" width="115"
+                                                height="44"
+                                                src="https://s.udemycdn.com/partner-logos/v4/netapp-dark.svg"></li><li
+                                            class="partner-logos--logo-item--2-lfP"><img
+                                                alt="Eventbrite logo"
+                                                width="115" height="44"
+                                                src="https://s.udemycdn.com/partner-logos/v4/eventbrite-dark.svg"></li><li
+                                            class="partner-logos--logo-item--2-lfP"><img
+                                                alt="Tata Consultancy Services
+                                                logo" width="115" height="44"
+                                                src="https://s.udemycdn.com/partner-logos/v4/tcs-dark.svg">
+                                            </li>
+                                            </ul>
+            </section>
+        </section>
+        
+    </body>
 </html>
